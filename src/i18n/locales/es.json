@@ -1,0 +1,172 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "technologies": "Tecnologías",
+    "projects": "Proyectos"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "subtitle": "Desarrollador Full-Stack Senior e Ingeniero Cloud",
+    "intro": "Soy un experto en TI multidisciplinario con más de una década de experiencia en Administración de Sistemas, Desarrollo Full-Stack y Gestión de Bases de Datos — siempre con mentalidad DevOps. También he trabajado con Web3, Computación en la Nube, Ciberseguridad y, más recientemente, he explorado en profundidad la Inteligencia Artificial. Mi carrera ha evolucionado desde el trabajo técnico operativo hasta liderar proyectos tecnológicos a gran escala en MercadoLibre, una de las principales empresas tecnológicas de América Latina.",
+    "specialty": "Me especializo en diseñar infraestructuras resilientes, construir sistemas de software de alto rendimiento y resolver problemas complejos mediante soluciones inteligentes y con visión de futuro. Ya sea automatizando despliegues en la nube, optimizando sistemas distribuidos o integrando IA en aplicaciones reales, me encanta hacer que la tecnología funcione de forma fluida y eficiente.",
+    "passion": "Me apasiona aprender tecnologías emergentes y explorar constantemente nuevas formas de ampliar límites, mejorar la escalabilidad y crear impacto real. Si buscas a alguien que combine una sólida experiencia técnica con una mentalidad creativa para resolver problemas — construyamos algo extraordinario juntos.",
+    "achievementsTitle": "Logros destacados",
+    "achievement1": "Automaticé despliegues y operaciones en la nube con Terraform, Docker y Kubernetes, reduciendo tiempos de entrega en ~40%.",
+    "achievement2": "Desarrollé \"as a wizard\", un Orquestador de Infraestructura Cloud diseñado para proveer estos recursos en toda la empresa — incluso para usuarios no técnicos.",
+    "achievement3": "Lideré equipos de desarrollo de hasta cinco personas, incluyendo tres desarrolladores de nivel medio.",
+    "languagesTitle": "Idiomas",
+    "spanish": "Español",
+    "english": "Inglés",
+    "portuguese": "Portugués",
+    "native": "Nativo",
+    "fluent": "Lectura y conversación fluidas",
+    "basic": "Lectura y conversación básicas"
+  },
+  "experience": {
+    "title": "Experiencia profesional",
+    "subtitle": "Trayectoria e hitos clave",
+    "present": "Presente",
+    "keyResponsibilities": "Responsabilidades clave",
+    "keyAchievement": "Logro destacado",
+    "keyAchievements": "Logros destacados",
+    "keySkills": "Habilidades y herramientas clave"
+  },
+  "technologies": {
+    "title": "Tecnologías y habilidades",
+    "subtitle": "Herramientas y tecnologías con las que trabajo",
+    "filterBy": "Filtrar por categoría",
+    "all": "Todas"
+  },
+  "projects": {
+    "title": "Proyectos personales",
+    "subtitle": "Proyectos paralelos e iniciativas",
+    "role": "Rol",
+    "roles": "Roles",
+    "year": "Año",
+    "technologies": "Tecnologías",
+    "description": "Descripción"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "contact": "Contacto"
+  },
+  "theme": {
+    "light": "Claro",
+    "dark": "Oscuro"
+  },
+  "experience": {
+    "entries": [
+      {
+        "company": "MercadoLibre",
+        "companyPeriod": "Diciembre 2017 - Marzo 2025",
+        "role": "Ingeniero de Ciberseguridad",
+        "period": "Marzo 2023 - Marzo 2025",
+        "summary": "Lideré iniciativas a nivel corporativo en automatización, monitoreo y análisis de riesgo tecnológico.",
+        "responsibilities": [
+          "Lideré un equipo de desarrollo que construyó y mantuvo una herramienta interna de gestión de riesgo IT usada en múltiples unidades de negocio.",
+          "Diseñé e implementé automatización proactiva para detectar amenazas potenciales en sistemas e infraestructura antes del impacto.",
+          "Desarrollé y mantuve dashboards de seguridad centralizando métricas clave e indicadores de salud del sistema.",
+          "Planifiqué y coordiné sprints ágiles, alineando entregas técnicas con objetivos estratégicos de negocio.",
+          "Definí métricas de seguridad clave e informes a nivel ejecutivo para C-suite."
+        ],
+        "achievement": "Lideré el desarrollo de una herramienta interna de gestión de riesgo IT usada en varias unidades para priorizar y mitigar vulnerabilidades; entregué dashboards ejecutivos y métricas de seguridad basadas en datos.",
+        "skills": ["Looker", "SQL", "Jira", "OKR", "Visualización de datos", "Detección de amenazas", "Desarrollo de dashboards"]
+      },
+      {
+        "company": "MercadoLibre",
+        "role": "Ingeniero de Cloud Computing",
+        "period": "Febrero 2020 - Marzo 2023",
+        "summary": "Ingeniero senior de sistemas cloud liderando el diseño e implementación de arquitecturas de aplicaciones distribuidas con foco en alta disponibilidad, seguridad y escalabilidad.",
+        "responsibilities": [
+          "Brindé soporte operativo y guía técnica a equipos con experiencia limitada en cloud.",
+          "Diseñé arquitecturas de aplicación avanzadas con redundancia, resiliencia y balanceo de carga.",
+          "Desarrollé y desplegué aplicaciones complejas con múltiples integraciones internas y externas.",
+          "Aseguré cumplimiento de estándares de seguridad en todo el ciclo de vida del software.",
+          "Mentoricé ingenieros junior y lideré planificación de sprints en equipos cross-funcionales."
+        ],
+        "achievement": "Lideré y contribuí a una plataforma interna de orquestación de infraestructura con interfaz tipo wizard, democratizando el aprovisionamiento de entornos cloud para usuarios no técnicos.",
+        "skills": ["Linux", "Bash", "Python", "Kubernetes", "AWS (S3, EBS, EC2, Lambda)", "MySQL", "DocumentDB", "VPC", "Terraform"]
+      },
+      {
+        "company": "MercadoLibre",
+        "role": "Analista de Sistemas Devtools",
+        "period": "Febrero 2019 - Febrero 2020",
+        "summary": "Desarrollo full-stack y automatización de procesos internos.",
+        "responsibilities": [
+          "Desarrollé aplicaciones web y APIs con Python, Node.js y React.js.",
+          "Diseñé e implementé arquitecturas de API a pequeña escala para integración entre servicios internos.",
+          "Administré y optimicé bases MySQL: backups, HA, troubleshooting de rendimiento.",
+          "Implementé y gestioné pipelines CI/CD con Jenkins y Docker.",
+          "Monitoreé la salud de aplicaciones en producción y soporte de segundo nivel para incidentes críticos."
+        ],
+        "achievement": "Desarrollé un portal web interno de autoservicio y automatización que redujo significativamente la carga operativa y mejoró los tiempos de resolución de incidentes.",
+        "skills": ["Node.js", "React.js", "Python", "MySQL", "Docker", "Jenkins", "Bash"]
+      },
+      {
+        "company": "MercadoLibre",
+        "role": "Analista de Soporte Técnico",
+        "period": "Diciembre 2017 - Febrero 2019",
+        "summary": "Soporte integral en macOS, Windows y Linux en un entorno crítico de negocio.",
+        "responsibilities": [
+          "Resolución de problemas de conectividad y red (Wi-Fi, LAN, switches, servidores Linux).",
+          "Análisis de causa raíz para eliminar problemas recurrentes y mejorar la estabilidad.",
+          "Iniciativas de automatización y monitoreo del estado de laptops corporativas (alertas, chequeos preventivos).",
+          "Despliegue y configuración de conectividad de red para nuevas oficinas."
+        ],
+        "achievement": "Entregué un entorno de trabajo estable y seguro mediante criterio técnico sólido y monitoreo proactivo; soporté infraestructura Linux y servicios de red.",
+        "skills": ["Linux", "Bash", "macOS", "Windows", "Redes", "Monitoreo"]
+      },
+      {
+        "company": "K2B",
+        "role": "Desarrollador",
+        "period": "Noviembre 2015 - Diciembre 2017",
+        "summary": "Rol orientado al desarrollo con desempeño destacado. Desarrollo en GeneXus desplegado en Java para soluciones ERP.",
+        "responsibilities": [
+          "Desarrollo en GeneXus y Java para soluciones ERP.",
+          "Despliegue y mantenimiento de servidores web Apache Tomcat."
+        ],
+        "achievement": "Entrega enfocada en desarrollo para soluciones ERP en entorno Java/GeneXus.",
+        "skills": ["GeneXus", "Java", "Apache Tomcat"]
+      },
+      {
+        "company": "Freelance",
+        "role": "Desarrollador Web Scraping",
+        "period": "Marzo 2015 - Noviembre 2015",
+        "summary": "Parsers en Python y PHP para extraer información estructurada de sitios web para un empleador español.",
+        "responsibilities": [
+          "Desarrollé parsers para extraer los datos más importantes de cada página.",
+          "Manejo sólido de HTML y CSS para una extracción fiable."
+        ],
+        "achievement": "Entregué soluciones de extracción de datos estructurados con Python y PHP y conocimiento profundo de HTML/CSS.",
+        "skills": ["Python", "PHP", "HTML", "CSS"]
+      }
+    ]
+  },
+  "projects": {
+    "list": [
+      {
+        "name": "Cambiofigus",
+        "url": "https://cambiofigus.com.uy/",
+        "year": "2025",
+        "roles": "Desarrollo, Infraestructura, Analista, Marketing",
+        "description": "Plataforma de intercambio de coleccionables y álbum virtual (100% impulsada por IA). Desarrollé de forma independiente una plataforma web para el intercambio de coleccionables digitales con funcionalidades de álbum virtual. Apliqué Vibe Coding e IA para optimizar procesos, configuración de servicios e investigación de proveedores. Infraestructura en Railway (backend, frontend, base de datos), Cloudflare como CDN, Zoho Mail; Google AdSense, Analytics y Search Console para monetización y SEO.",
+        "technologies": ["Railway", "Cloudflare", "Zoho", "Google AdSense", "Google Analytics", "IA"]
+      },
+      {
+        "name": "Herramientas de trading cripto",
+        "year": "2025",
+        "roles": "Desarrollo, Analista",
+        "description": "Herramientas para medir, monitorear y automatizar flujos de trabajo de trading cripto usando Binance. Desarrollé herramientas propias usando las APIs, SDKs y streams de datos de Binance.",
+        "technologies": ["Node.js", "Binance API", "Data streams"]
+      },
+      {
+        "name": "Apes of Empires",
+        "year": "2021 - 2022",
+        "roles": "Infraestructura, Desarrollo, Soporte de usuario, Analista",
+        "description": "Juego Web3 desarrollado con Node.js y React.js, integrado con contratos inteligentes en Solidity. Lideré frontend, backend, despliegue e infraestructura; contribuí a contratos Solidity, tokenomics, documentación, lanzamiento y levantamiento de capital inicial (incluyendo configuración de par de liquidez).",
+        "technologies": ["Node.js", "React.js", "Solidity", "Web3", "IPFS"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <script>
+      (function() {
+        var s = localStorage.getItem('portfolio-theme');
+        if (s === 'dark' || s === 'light') document.documentElement.setAttribute('data-theme', s);
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Federico Frade | Full-Stack Senior Developer</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

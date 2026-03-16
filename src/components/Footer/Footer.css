@@ -1,0 +1,37 @@
+.footer {
+  margin-top: auto;
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 2rem var(--section-padding-x);
+}
+
+.footer__inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer__copy {
+  margin: 0 0 0.5rem;
+  font-size: 0.875rem;
+  color: var(--footer-text-muted);
+}
+
+.footer__contact {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.footer__label {
+  color: var(--footer-text-muted);
+}
+
+.footer__link {
+  color: var(--footer-text);
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+  color: var(--color-primary);
+}

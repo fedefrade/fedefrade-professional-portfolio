@@ -21,26 +21,18 @@
 .header__logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  color: var(--color-text);
-  font-weight: 700;
-  font-size: 1.25rem;
   text-decoration: none;
 }
 
 .header__logo:hover {
   text-decoration: none;
-  color: var(--color-primary);
 }
 
 .header__logo-img {
-  width: 36px;
-  height: 36px;
+  width: 56px;
+  height: 56px;
   object-fit: contain;
-}
-
-.header__logo-text {
-  letter-spacing: -0.02em;
+  display: block;
 }
 
 .header__burger {

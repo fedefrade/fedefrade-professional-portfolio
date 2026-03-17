@@ -19,8 +19,7 @@ export function Header() {
     <header className="header" role="banner">
       <div className="header__inner">
         <a href="#about" className="header__logo" onClick={(e) => { e.preventDefault(); handleNavClick('about') }} aria-label="Home">
-          <img src="/logo.svg" alt="Logo" className="header__logo-img" />
-          <span className="header__logo-text">FF</span>
+          <img src="/logo_1.png" alt="FF - Federico Frade" className="header__logo-img" />
         </a>
 
         <button

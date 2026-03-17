@@ -14,7 +14,7 @@ export function Footer() {
           <span className="footer__label">{t('footer.contact')}:</span>{' '}
           <a href="mailto:fedefrade21@gmail.com" className="footer__link">fedefrade21@gmail.com</a>
           {' · '}
-          <a href="https://www.linkedin.com/in/federicofrade" target="_blank" rel="noopener noreferrer" className="footer__link">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/federico-frade-full-stack-senior-developer" target="_blank" rel="noopener noreferrer" className="footer__link">LinkedIn</a>
         </p>
       </div>
     </footer>

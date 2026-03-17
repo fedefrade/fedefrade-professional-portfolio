@@ -21,6 +21,9 @@ const DOWNLOADED_ICONS = {
   looker: '/tech-logos/looker-icon.svg',
   web3: '/tech-logos/web3-icon.svg',
   ipfs: '/tech-logos/ipfs-icon.png',
+  pydantic: '/tech-logos/pydantic-icon.png',
+  sqlalchemy: '/tech-logos/sqlalchemy-icon.png',
+  typeorm: '/tech-logos/typeorm-icon.png',
 }
 
 export function getTechnologyIconUrl(techId, devicon) {
@@ -42,6 +45,8 @@ export const TECHNOLOGIES = [
   { id: 'typescript', name: 'TypeScript', tags: ['Development'], experience_time: '4+ years', keywords: ['development', 'frontend', 'backend', 'javascript', 'nodejs', 'typescript'], devicon: { name: 'typescript', version: 'original' } },
   { id: 'python', name: 'Python', tags: ['Development'], experience_time: '6+ years', keywords: ['development', 'backend', 'python'], devicon: { name: 'python', version: 'original' } },
   { id: 'flask', name: 'Flask', tags: ['Development'], experience_time: '4+ years', keywords: ['development', 'backend', 'python', 'flask'], devicon: { name: 'flask', version: 'original' } },
+  { id: 'pydantic', name: 'Pydantic', tags: ['Development'], experience_time: '4+ years', keywords: ['development', 'backend', 'python', 'pydantic'], devicon: null },
+  { id: 'sqlalchemy', name: 'SQLAlchemy', tags: ['Development', 'Database'], experience_time: '4+ years', keywords: ['development', 'database', 'backend', 'python', 'sqlalchemy', 'orm'], devicon: null },
   { id: 'bash', name: 'Bash', tags: ['Development', 'DevOps'], experience_time: '7+ years', keywords: ['development', 'devops', 'backend', 'bash'], devicon: { name: 'bash', version: 'original' } },
   // { id: 'sql', name: 'SQL', tags: ['Database'] },
   { id: 'aws', name: 'AWS', tags: ['Cloud'], experience_time: '5+ years', keywords: ['cloud', 'aws'], devicon: { name: 'amazonwebservices', version: 'plain-wordmark' } },
@@ -49,6 +54,7 @@ export const TECHNOLOGIES = [
   { id: 'aurora', name: 'Amazon Aurora', tags: ['Database', 'Cloud'], experience_time: '3+ years', keywords: ['database', 'cloud', 'backend', 'aurora'], devicon: { name: 'amazonwebservices', version: 'plain-wordmark' } },
   { id: 'documentdb', name: 'DocumentDB', tags: ['Database', 'Cloud'], experience_time: '3+ years', keywords: ['database', 'cloud', 'backend', 'documentdb'], devicon: { name: 'mongodb', version: 'original' } },
   { id: 'mongodb', name: 'MongoDB', tags: ['Database'], experience_time: '3+ years', keywords: ['database', 'backend', 'mongodb'], devicon: { name: 'mongodb', version: 'original' } },
+  { id: 'typeorm', name: 'TypeORM', tags: ['Development', 'Database'], experience_time: '3+ years', keywords: ['development', 'database', 'backend', 'typescript', 'javascript', 'nodejs', 'typeorm', 'orm'], devicon: null },
   { id: 'terraform', name: 'Terraform', tags: ['Infrastructure', 'DevOps'], experience_time: '4+ years', keywords: ['infrastructure', 'devops', 'backend', 'terraform'], devicon: { name: 'terraform', version: 'original' } },
   { id: 'kubernetes', name: 'Kubernetes', tags: ['Infrastructure', 'DevOps'], experience_time: '4+ years', keywords: ['infrastructure', 'devops', 'backend', 'kubernetes'], devicon: { name: 'kubernetes', version: 'original' } },
   { id: 'docker', name: 'Docker', tags: ['Infrastructure', 'DevOps'], experience_time: '5+ years', keywords: ['infrastructure', 'devops', 'backend', 'docker'], devicon: { name: 'docker', version: 'original' } },

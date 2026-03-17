@@ -23,15 +23,6 @@
     "fluent": "Fluent reading and speaking",
     "basic": "Basic reading and speaking"
   },
-  "experience": {
-    "title": "Professional Experience",
-    "subtitle": "Career path and key milestones",
-    "present": "Present",
-    "keyResponsibilities": "Key Responsibilities",
-    "keyAchievement": "Key Achievement",
-    "keyAchievements": "Key Achievements",
-    "keySkills": "Key Skills & Tools"
-  },
   "technologies": {
     "title": "Technologies & Skills",
     "subtitle": "Tools and technologies I work with",
@@ -42,15 +33,6 @@
     "experience": "Experience",
     "close": "Close"
   },
-  "projects": {
-    "title": "Personal Projects",
-    "subtitle": "Side projects and initiatives",
-    "role": "Role",
-    "roles": "Roles",
-    "year": "Year",
-    "technologies": "Technologies",
-    "description": "Description"
-  },
   "footer": {
     "rights": "All rights reserved.",
     "contact": "Contact"
@@ -60,6 +42,13 @@
     "dark": "Dark"
   },
   "experience": {
+    "title": "Professional Experience",
+    "subtitle": "Career path and key milestones",
+    "present": "Present",
+    "keyResponsibilities": "Key Responsibilities",
+    "keyAchievement": "Key Achievement",
+    "keyAchievements": "Key Achievements",
+    "keySkills": "Key Skills & Tools",
     "entries": [
       {
         "company": "MercadoLibre",
@@ -148,6 +137,13 @@
     ]
   },
   "projects": {
+    "title": "Personal Projects",
+    "subtitle": "Side projects and initiatives",
+    "role": "Role",
+    "roles": "Roles",
+    "year": "Year",
+    "technologies": "Technologies",
+    "description": "Description",
     "list": [
       {
         "name": "Cambiofigus",

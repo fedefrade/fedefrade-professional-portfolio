@@ -23,15 +23,6 @@
     "fluent": "Lectura y conversación fluidas",
     "basic": "Lectura y conversación básicas"
   },
-  "experience": {
-    "title": "Experiencia profesional",
-    "subtitle": "Trayectoria e hitos clave",
-    "present": "Presente",
-    "keyResponsibilities": "Responsabilidades clave",
-    "keyAchievement": "Logro destacado",
-    "keyAchievements": "Logros destacados",
-    "keySkills": "Habilidades y herramientas clave"
-  },
   "technologies": {
     "title": "Tecnologías y habilidades",
     "subtitle": "Herramientas y tecnologías con las que trabajo",
@@ -42,15 +33,6 @@
     "experience": "Experiencia",
     "close": "Cerrar"
   },
-  "projects": {
-    "title": "Proyectos personales",
-    "subtitle": "Proyectos paralelos e iniciativas",
-    "role": "Rol",
-    "roles": "Roles",
-    "year": "Año",
-    "technologies": "Tecnologías",
-    "description": "Descripción"
-  },
   "footer": {
     "rights": "Todos los derechos reservados.",
     "contact": "Contacto"
@@ -60,6 +42,13 @@
     "dark": "Oscuro"
   },
   "experience": {
+    "title": "Experiencia profesional",
+    "subtitle": "Trayectoria e hitos clave",
+    "present": "Presente",
+    "keyResponsibilities": "Responsabilidades clave",
+    "keyAchievement": "Logro destacado",
+    "keyAchievements": "Logros destacados",
+    "keySkills": "Habilidades y herramientas clave",
     "entries": [
       {
         "company": "MercadoLibre",
@@ -148,6 +137,13 @@
     ]
   },
   "projects": {
+    "title": "Proyectos personales",
+    "subtitle": "Proyectos paralelos e iniciativas",
+    "role": "Rol",
+    "roles": "Roles",
+    "year": "Año",
+    "technologies": "Tecnologías",
+    "description": "Descripción",
     "list": [
       {
         "name": "Cambiofigus",

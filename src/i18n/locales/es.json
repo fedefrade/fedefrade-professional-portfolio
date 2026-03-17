@@ -37,6 +37,8 @@
     "subtitle": "Herramientas y tecnologías con las que trabajo",
     "filterBy": "Filtrar por categoría",
     "all": "Todas",
+    "searchPlaceholder": "Buscar por palabra clave…",
+    "clearSearch": "Limpiar búsqueda",
     "experience": "Experiencia",
     "close": "Cerrar"
   },

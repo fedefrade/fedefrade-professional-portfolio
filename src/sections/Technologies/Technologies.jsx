@@ -30,17 +30,38 @@ function TechIcon({ tech }) {
 
 const ALL_TAGS = [...new Set(TECHNOLOGIES.flatMap((t) => t.tags))].sort()
 
+function normalizeForSearch(str) {
+  return str.toLowerCase().replace(/[^a-z0-9]/g, '')
+}
+
+function matchTechByKeywords(tech, searchTerms) {
+  if (!tech.keywords || tech.keywords.length === 0) return false
+  const normalizedKeywords = tech.keywords.map(normalizeForSearch)
+  return searchTerms.some((term) =>
+    normalizedKeywords.some((kw) => kw.includes(term) || term.includes(kw))
+  )
+}
+
 export function Technologies() {
   const { t, locale } = useI18n()
+  const [searchQuery, setSearchQuery] = useState('')
   const [selectedTags, setSelectedTags] = useState([])
   const [paused, setPaused] = useState(false)
   const [modalTech, setModalTech] = useState(null)
   const scrollRef = useRef(null)
 
+  const searchTerms = searchQuery
+    .trim()
+    .split(/\s+/)
+    .map(normalizeForSearch)
+    .filter(Boolean)
+
   const filtered =
-    selectedTags.length === 0
-      ? TECHNOLOGIES
-      : TECHNOLOGIES.filter((tech) => selectedTags.some((tag) => tech.tags.includes(tag)))
+    searchTerms.length > 0
+      ? TECHNOLOGIES.filter((tech) => matchTechByKeywords(tech, searchTerms))
+      : selectedTags.length === 0
+        ? TECHNOLOGIES
+        : TECHNOLOGIES.filter((tech) => selectedTags.some((tag) => tech.tags.includes(tag)))
 
   const toggleTag = useCallback((tag) => {
     setSelectedTags((prev) =>
@@ -49,6 +70,16 @@ export function Technologies() {
   }, [])
 
   const labelForTag = (tag) => (TAG_LABELS[tag] ? TAG_LABELS[tag][locale] || TAG_LABELS[tag].en : tag)
+
+  const handleSearchChange = useCallback((e) => {
+    const value = e.target.value
+    setSearchQuery(value)
+    if (value.length > 0) setSelectedTags([])
+  }, [])
+
+  const clearSearch = useCallback(() => {
+    setSearchQuery('')
+  }, [])
 
   useEffect(() => {
     if (!modalTech) return
@@ -62,6 +93,27 @@ export function Technologies() {
       <div className="technologies__container section__container">
         <h2 className="technologies__title section__title">{t('technologies.title')}</h2>
         <p className="technologies__subtitle section__subtitle">{t('technologies.subtitle')}</p>
+
+        <div className="technologies__search-wrap">
+          <input
+            type="search"
+            className="technologies__search-input"
+            placeholder={t('technologies.searchPlaceholder')}
+            value={searchQuery}
+            onChange={handleSearchChange}
+            aria-label={t('technologies.searchPlaceholder')}
+          />
+          <button
+            type="button"
+            className="technologies__search-clear"
+            onClick={clearSearch}
+            aria-label={t('technologies.clearSearch')}
+            title={t('technologies.clearSearch')}
+            hidden={!searchQuery.trim()}
+          >
+            ×
+          </button>
+        </div>
 
         <div className="technologies__filter">
           <span className="technologies__filter-label">{t('technologies.filterBy')}:</span>

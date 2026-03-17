@@ -40,7 +40,7 @@ export const TECHNOLOGIES = [
   { id: 'javascript', name: 'JavaScript', tags: ['Development'], experience_time: '6+ years', keywords: ['development', 'frontend', 'backend'], devicon: { name: 'javascript', version: 'original' } },
   { id: 'react', name: 'React.js', tags: ['Development'], experience_time: '6+ years', keywords: ['development', 'frontend', 'javascript', 'nodejs'], devicon: { name: 'react', version: 'original' } },
   { id: 'typescript', name: 'TypeScript', tags: ['Development'], experience_time: '4+ years', keywords: ['development', 'frontend', 'backend', 'javascript', 'nodejs'], devicon: { name: 'typescript', version: 'original' } },
-  { id: 'python', name: 'Python', tags: ['Development'], experience_time: '6+ years', keywords: ['development', 'backend'], devicon: { name: 'python', version: 'original' } },
+  { id: 'python', name: 'Python', tags: ['Development'], experience_time: '6+ years', keywords: ['development', 'backend', 'python'], devicon: { name: 'python', version: 'original' } },
   { id: 'flask', name: 'Flask', tags: ['Development'], experience_time: '4+ years', keywords: ['development', 'backend', 'python'], devicon: { name: 'flask', version: 'original' } },
   { id: 'bash', name: 'Bash', tags: ['Development', 'DevOps'], experience_time: '7+ years', keywords: ['development', 'devops', 'backend'], devicon: { name: 'bash', version: 'original' } },
   // { id: 'sql', name: 'SQL', tags: ['Database'] },

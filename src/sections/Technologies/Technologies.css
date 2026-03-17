@@ -2,6 +2,80 @@
   background: var(--section-alt-bg);
 }
 
+.technologies__search-wrap {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  width: 100%;
+  max-width: 320px;
+}
+
+.technologies__search-input {
+  width: 100%;
+  padding: 0.5rem 2.25rem 0.5rem 0.75rem;
+  font-size: 0.9375rem;
+  font-family: inherit;
+  color: var(--color-text);
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.technologies__search-input::placeholder {
+  color: var(--color-text-muted);
+}
+
+/* Hide native clear button (browsers show their own X on type="search") so only our button shows */
+.technologies__search-input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.technologies__search-input::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.technologies__search-input::-moz-search-cancel-button {
+  display: none;
+}
+
+.technologies__search-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(14, 76, 146, 0.2);
+}
+
+.technologies__search-clear {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  line-height: 1;
+  color: var(--color-text-muted);
+  background: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s;
+}
+
+.technologies__search-clear:hover {
+  color: var(--color-text);
+  background: var(--color-surface);
+}
+
+.technologies__search-clear[hidden] {
+  display: none;
+}
+
 .technologies__filter {
   margin-bottom: 2rem;
 }

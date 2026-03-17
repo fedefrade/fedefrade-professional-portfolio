@@ -37,6 +37,8 @@
     "subtitle": "Tools and technologies I work with",
     "filterBy": "Filter by category",
     "all": "All",
+    "searchPlaceholder": "Search by keyword…",
+    "clearSearch": "Clear search",
     "experience": "Experience",
     "close": "Close"
   },

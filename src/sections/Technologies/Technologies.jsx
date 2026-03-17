@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback } from 'react'
+import { useState, useRef, useCallback, useEffect } from 'react'
 import { useI18n } from '../../i18n/I18nContext'
 import { TECHNOLOGIES, TAG_LABELS, getTechnologyIconUrl } from '../../data/technologies'
 import './Technologies.css'
@@ -34,6 +34,7 @@ export function Technologies() {
   const { t, locale } = useI18n()
   const [selectedTags, setSelectedTags] = useState([])
   const [paused, setPaused] = useState(false)
+  const [modalTech, setModalTech] = useState(null)
   const scrollRef = useRef(null)
 
   const filtered =
@@ -48,6 +49,13 @@ export function Technologies() {
   }, [])
 
   const labelForTag = (tag) => (TAG_LABELS[tag] ? TAG_LABELS[tag][locale] || TAG_LABELS[tag].en : tag)
+
+  useEffect(() => {
+    if (!modalTech) return
+    const onEscape = (e) => { if (e.key === 'Escape') setModalTech(null) }
+    document.addEventListener('keydown', onEscape)
+    return () => document.removeEventListener('keydown', onEscape)
+  }, [modalTech])
 
   return (
     <section id="technologies" className="technologies section">
@@ -91,14 +99,25 @@ export function Technologies() {
                   {[1, 2].map((copy) => (
                     <div key={copy} className="technologies__set">
                       {filtered.map((tech) => (
-                        <div key={`${copy}-${tech.id}`} className="technologies__card">
-                          <div className="technologies__card-icon" title={tech.name}>
+                        <div
+                          key={`${copy}-${tech.id}`}
+                          className="technologies__card"
+                          role="button"
+                          tabIndex={0}
+                          onClick={() => setModalTech(tech)}
+                          onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setModalTech(tech) } }}
+                          title={tech.name}
+                        >
+                          <div className="technologies__card-icon">
                             <TechIcon tech={tech} />
                             <span className="technologies__card-icon-fallback" aria-hidden>
                               {tech.name.slice(0, 2).toUpperCase()}
                             </span>
                           </div>
                           <span className="technologies__card-label">{tech.name}</span>
+                          {tech.experience_time && (
+                            <span className="technologies__card-experience">{tech.experience_time}</span>
+                          )}
                         </div>
                       ))}
                     </div>
@@ -111,6 +130,42 @@ export function Technologies() {
           </div>
         </div>
       </div>
+
+      {modalTech && (
+        <div
+          className="technologies__modal-backdrop"
+          onClick={() => setModalTech(null)}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="tech-modal-title"
+        >
+          <div
+            className="technologies__modal"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="technologies__modal-header">
+              <div className="technologies__modal-icon-wrap">
+                <TechIcon tech={modalTech} />
+              </div>
+              <h3 id="tech-modal-title" className="technologies__modal-title">{modalTech.name}</h3>
+            </div>
+            {modalTech.experience_time && (
+              <p className="technologies__modal-experience">
+                <span className="technologies__modal-label">{t('technologies.experience')}:</span>{' '}
+                {modalTech.experience_time}
+              </p>
+            )}
+            <button
+              type="button"
+              className="technologies__modal-close"
+              onClick={() => setModalTech(null)}
+              aria-label={t('technologies.close')}
+            >
+              {t('technologies.close')}
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   )
 }

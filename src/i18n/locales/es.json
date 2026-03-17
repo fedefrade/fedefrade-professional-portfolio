@@ -36,7 +36,9 @@
     "title": "Tecnologías y habilidades",
     "subtitle": "Herramientas y tecnologías con las que trabajo",
     "filterBy": "Filtrar por categoría",
-    "all": "Todas"
+    "all": "Todas",
+    "experience": "Experiencia",
+    "close": "Cerrar"
   },
   "projects": {
     "title": "Proyectos personales",

@@ -93,11 +93,21 @@
   box-shadow: var(--shadow-sm);
   flex-shrink: 0;
   transition: border-color 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  position: relative;
 }
 
 .technologies__card:hover {
   border-color: var(--color-primary);
   box-shadow: var(--shadow-md);
+}
+
+.technologies__card-experience {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  text-align: center;
+  line-height: 1.2;
 }
 
 .technologies__card-icon {
@@ -188,4 +198,113 @@
   .technologies__card-label {
     font-size: 0.9375rem;
   }
+
+  .technologies__card-experience {
+    font-size: 0.8125rem;
+  }
+}
+
+/* Modal */
+.technologies__modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+  animation: technologies-modal-fade 0.2s ease-out;
+}
+
+@keyframes technologies-modal-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.technologies__modal {
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+  padding: 1.5rem;
+  max-width: 320px;
+  width: 100%;
+  animation: technologies-modal-in 0.2s ease-out;
+}
+
+@keyframes technologies-modal-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.technologies__modal-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.technologies__modal-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.technologies__modal-icon-wrap .technologies__card-icon-img {
+  width: 28px;
+  height: 28px;
+}
+
+.technologies__modal-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.technologies__modal-experience {
+  margin: 0 0 1.25rem;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+
+.technologies__modal-label {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.technologies__modal-close {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 1rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.technologies__modal-close:hover {
+  background: var(--color-border);
+  border-color: var(--color-primary);
 }

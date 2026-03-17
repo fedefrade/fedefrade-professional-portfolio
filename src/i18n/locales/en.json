@@ -36,7 +36,9 @@
     "title": "Technologies & Skills",
     "subtitle": "Tools and technologies I work with",
     "filterBy": "Filter by category",
-    "all": "All"
+    "all": "All",
+    "experience": "Experience",
+    "close": "Close"
   },
   "projects": {
     "title": "Personal Projects",

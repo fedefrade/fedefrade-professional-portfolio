@@ -154,3 +154,38 @@
   text-align: center;
   color: var(--color-text-muted);
 }
+
+/* Large screens: double icon and card size */
+@media (min-width: 1024px) {
+  .technologies__set {
+    gap: 2rem;
+    padding-right: 2rem;
+  }
+
+  .technologies__card {
+    min-width: 180px;
+    padding: 2rem 1.5rem;
+    gap: 1rem;
+    border-radius: 16px;
+  }
+
+  .technologies__card-icon {
+    width: 96px;
+    height: 96px;
+    border-radius: 16px;
+  }
+
+  .technologies__card-icon-img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .technologies__card-icon-fallback,
+  .technologies__card-icon-text {
+    font-size: 1.75rem;
+  }
+
+  .technologies__card-label {
+    font-size: 0.9375rem;
+  }
+}

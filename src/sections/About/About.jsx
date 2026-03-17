@@ -18,9 +18,11 @@ export function About() {
 
         <div className="about__grid">
           <div className="about__photo-wrap">
-            <div className="about__photo-placeholder" aria-hidden>
-              <span className="about__photo-initials">FF</span>
-            </div>
+            <img
+              src="/ff-image-profile.jpg"
+              alt="Federico Frade"
+              className="about__photo-img"
+            />
             <p className="about__photo-caption">Federico Frade</p>
           </div>
           <div className="about__content">

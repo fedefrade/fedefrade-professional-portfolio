@@ -109,6 +109,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.technologies__card-icon-img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.technologies__card-icon-fallback {
+  display: none;
+  position: absolute;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  letter-spacing: -0.02em;
+}
+
+.technologies__card-icon-fallback--show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .technologies__card-icon-text {

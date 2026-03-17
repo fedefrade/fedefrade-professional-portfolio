@@ -1,7 +1,32 @@
 import { useState, useRef, useCallback } from 'react'
 import { useI18n } from '../../i18n/I18nContext'
-import { TECHNOLOGIES, TAG_LABELS } from '../../data/technologies'
+import { TECHNOLOGIES, TAG_LABELS, getTechnologyIconUrl } from '../../data/technologies'
 import './Technologies.css'
+
+function TechIcon({ tech }) {
+  const src = getTechnologyIconUrl(tech.id, tech.devicon)
+  if (src) {
+    return (
+      <img
+        src={src}
+        alt=""
+        className="technologies__card-icon-img"
+        loading="lazy"
+        onError={(e) => {
+          e.target.style.display = 'none'
+          const wrap = e.target.closest('.technologies__card-icon')
+          const fallback = wrap?.querySelector('.technologies__card-icon-fallback')
+          if (fallback) fallback.classList.add('technologies__card-icon-fallback--show')
+        }}
+      />
+    )
+  }
+  return (
+    <span className="technologies__card-icon-text" aria-hidden>
+      {tech.name.slice(0, 2).toUpperCase()}
+    </span>
+  )
+}
 
 const ALL_TAGS = [...new Set(TECHNOLOGIES.flatMap((t) => t.tags))].sort()
 
@@ -68,7 +93,10 @@ export function Technologies() {
                       {filtered.map((tech) => (
                         <div key={`${copy}-${tech.id}`} className="technologies__card">
                           <div className="technologies__card-icon" title={tech.name}>
-                            <span className="technologies__card-icon-text">{tech.name.slice(0, 2).toUpperCase()}</span>
+                            <TechIcon tech={tech} />
+                            <span className="technologies__card-icon-fallback" aria-hidden>
+                              {tech.name.slice(0, 2).toUpperCase()}
+                            </span>
                           </div>
                           <span className="technologies__card-label">{tech.name}</span>
                         </div>

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useI18n } from '../../i18n/I18nContext'
 import { useTheme } from '../../context/ThemeContext'
+import { publicUrl } from '../../utils/publicUrl'
 import './Header.css'
 
 const SECTION_IDS = ['about', 'experience', 'technologies', 'projects']
@@ -19,7 +20,7 @@ export function Header() {
     <header className="header" role="banner">
       <div className="header__inner">
         <a href="#about" className="header__logo" onClick={(e) => { e.preventDefault(); handleNavClick('about') }} aria-label="Home">
-          <img src="/logo_1.png" alt="FF - Federico Frade" className="header__logo-img" />
+          <img src={publicUrl('logo_1.png')} alt="FF - Federico Frade" className="header__logo-img" />
         </a>
 
         <button

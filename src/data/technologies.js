@@ -1,3 +1,5 @@
+import { publicUrl } from '../utils/publicUrl'
+
 /**
  * Technologies with display name, tags for filtering, and optional devicon (devicons.dev).
  * devicon: { name, version } - version is the SVG variant (original, plain, original-wordmark, plain-wordmark).
@@ -6,28 +8,28 @@
 const DEVICON_BASE = 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons'
 
 /**
- * Local icons in public/tech-logos. Key = technology id. Prefer SVG when both png and svg exist.
+ * Local icons in public/tech-logos (path relative to public root, no leading slash).
  */
-const DOWNLOADED_ICONS = {
-  aurora: '/tech-logos/aws-aurora-icon.svg',
-  ec2: '/tech-logos/aws-ec2-icon.png',
-  glacier: '/tech-logos/aws-glacier-icon.png',
-  lambda: '/tech-logos/aws-lambda-icon.svg',
-  s3: '/tech-logos/aws-s3-icon.svg',
-  bash: '/tech-logos/bash-icon.png',
-  ethers: '/tech-logos/ethers-seeklogo.svg',
-  flask: '/tech-logos/flask-icon.svg',
-  genexus: '/tech-logos/genexus-icon.png',
-  looker: '/tech-logos/looker-icon.svg',
-  web3: '/tech-logos/web3-icon.svg',
-  ipfs: '/tech-logos/ipfs-icon.png',
-  pydantic: '/tech-logos/pydantic-icon.png',
-  sqlalchemy: '/tech-logos/sqlalchemy-icon.png',
-  typeorm: '/tech-logos/typeorm-icon.png',
+const DOWNLOADED_ICON_PATHS = {
+  aurora: 'tech-logos/aws-aurora-icon.svg',
+  ec2: 'tech-logos/aws-ec2-icon.png',
+  glacier: 'tech-logos/aws-glacier-icon.png',
+  lambda: 'tech-logos/aws-lambda-icon.svg',
+  s3: 'tech-logos/aws-s3-icon.svg',
+  bash: 'tech-logos/bash-icon.png',
+  ethers: 'tech-logos/ethers-seeklogo.svg',
+  flask: 'tech-logos/flask-icon.svg',
+  genexus: 'tech-logos/genexus-icon.png',
+  looker: 'tech-logos/looker-icon.svg',
+  web3: 'tech-logos/web3-icon.svg',
+  ipfs: 'tech-logos/ipfs-icon.png',
+  pydantic: 'tech-logos/pydantic-icon.png',
+  sqlalchemy: 'tech-logos/sqlalchemy-icon.png',
+  typeorm: 'tech-logos/typeorm-icon.png',
 }
 
 export function getTechnologyIconUrl(techId, devicon) {
-  if (DOWNLOADED_ICONS[techId]) return DOWNLOADED_ICONS[techId]
+  if (DOWNLOADED_ICON_PATHS[techId]) return publicUrl(DOWNLOADED_ICON_PATHS[techId])
   if (!devicon) return null
   const { name, version = 'original' } = devicon
   return `${DEVICON_BASE}/${name}/${name}-${version}.svg`

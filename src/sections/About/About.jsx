@@ -1,4 +1,5 @@
 import { useI18n } from '../../i18n/I18nContext'
+import { publicUrl } from '../../utils/publicUrl'
 import './About.css'
 
 const LANGUAGES = [
@@ -19,7 +20,7 @@ export function About() {
         <div className="about__grid">
           <div className="about__photo-wrap">
             <img
-              src="/ff-image-profile.jpg"
+              src={publicUrl('ff-image-profile.jpg')}
               alt="Federico Frade"
               className="about__photo-img"
             />

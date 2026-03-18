@@ -35,7 +35,10 @@
   },
   "footer": {
     "rights": "All rights reserved.",
-    "contact": "Contact"
+    "contact": "Contact",
+    "emailAria": "Send email to Federico Frade",
+    "linkedinAria": "Federico Frade on LinkedIn",
+    "githubAria": "Federico Frade on GitHub"
   },
   "theme": {
     "light": "Light",

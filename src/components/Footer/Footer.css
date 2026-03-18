@@ -19,19 +19,52 @@
 
 .footer__contact {
   margin: 0;
-  font-size: 0.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer__label {
-  color: var(--footer-text-muted);
+.footer__social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
-.footer__link {
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 10px;
   color: var(--footer-text);
   text-decoration: none;
+  background: color-mix(in srgb, var(--footer-text) 6%, transparent);
+  transition:
+    transform 0.15s ease,
+    background 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
-.footer__link:hover {
-  text-decoration: underline;
-  color: var(--color-primary);
+.footer__social-link:hover {
+  transform: translateY(-2px);
+  background: color-mix(in srgb, var(--color-primary) 18%, transparent);
+  box-shadow: 0 4px 12px color-mix(in srgb, var(--color-primary) 25%, transparent);
+}
+
+.footer__social-link:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.footer__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  object-fit: contain;
 }

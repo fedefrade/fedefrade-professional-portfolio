@@ -1,7 +1,7 @@
 # Deploy Vite/React build to GitHub Pages
 #
-# URL with this repo: https://fedefrade.github.io/fedefrade-professional-portfolio/
-# (La raíz https://fedefrade.github.io/ solo aplica al repo fedefrade.github.io con base: '/'.)
+# Sitio: dominio custom (fedefrade.com) con base '/' en Vite.
+# La URL github.io/repo puede redirigir al dominio según configuración en Pages.
 #
 # Requisitos en GitHub:
 # 1. Settings → Pages → Source: GitHub Actions

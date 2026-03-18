@@ -82,7 +82,9 @@ public/             # Static assets (favicon, contact icons, etc.)
 ## Contact
 
 **Federico Frade** — full-stack & DevOps-oriented engineer.  
-Links and email are on the [live portfolio](https://fedefrade.com) footer.
+- [LinkedIn](https://www.linkedin.com/in/federico-frade-full-stack-senior-developer)
+- [Github](https://github.com/fedefrade)
+- [GMail](fedefrade21@gmail.com)
 
 ---
 
